@@ -1,38 +1,239 @@
-.App {
-  text-align: center;
+/* title syle section */
+.title-div{
+  position: absolute;
+  top:18rem;
+  color: #ffff;
+  padding-left: 10rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-div h3{
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  word-spacing: 2px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.title-div p{
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  margin-bottom: .5rem;
+  
+}
+
+.title-div .btn{
+  background-color: #fca652;
+  margin-top: 5rem;
+  padding: 2% 4%;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.btn:hover{
+  color: #fff;
+}
+
+/* carousel section */
+.carousel-indicators .active{
+  width: 30px;
+  height: 30px;
+  background-color: #fca652!important;
+  margin-right: 2rem;
+}
+
+.carousel-indicators li{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #fff!important;
+  margin-right: 2rem;
+}
+
+.carousel-indicators{
+  left: 13%;
+  bottom: 17%;
+  
+}
+
+/* navbar section */
+.navbar-div{
+  position: absolute;
+  top: 5rem;
+  right: 12rem;
+  left: 12rem;
+ 
+}
+
+.navbar-div a{
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-right: 2.3rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+
+}
+
+.navbar-div a,.navbar-div  a:hover,.navbar-div  a:active,.navbar-div  a:visited,.navbar-div  a:focus {
+ 
+  text-decoration: none;
+  
+}
+.navbar-div a:hover{
+  color: #fca652;
+}
+
+
+.my-hr-1{
+  
+ 
+  border-top: 2px solid #fff;
+}
+.list-inline{
+  text-align: end;
+}
+
+/* carsouel btn */
+@media screen and (max-width:1390px){
+
+ 
+  .carousel-indicators{
+    left: 15%;
+    bottom: 8%;
+    
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* carsouel btn */
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (max-width:1250px){
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+ 
+  .carousel-indicators{
+    left: 15%;
+    bottom: 1%;
+    
   }
 }
+
+/* tablet style general */
+@media screen and (max-width:992px){
+  
+.title-div h3{
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.title-div p{
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+ 
+}
+
+.title-div .btn{
+  background-color: #ffd57e;
+  margin-top: 3rem;
+  padding: 1% 2%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  
+}
+
+.carousel-indicators{
+  left: 17%;
+  bottom: 3%;
+  
+}
+
+
+.carousel-indicators .active{
+  width: 15px;
+  height: 15px;
+  background-color: #ffd57e!important;
+  margin-right: 2rem;
+}
+
+.carousel-indicators li{
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  background-color: #fff!important;
+  margin-right: 2rem;
+}
+
+.carousel-indicators{
+  left: 17%;
+  bottom: 0%;
+  
+}
+}
+
+
+/* laptop 1024 section */
+@media screen and (max-width:1026px){
+ img{
+    height: 610px!important;
+  }
+  
+.carousel-indicators{
+  left: 19%;
+  bottom: 2%;
+  
+}
+}
+/* tablet 768 section */
+@media screen and (max-width:769px){
+  img{
+     height: 470px!important;
+   }
+   
+ .carousel-indicators{
+   left: 21%;
+   bottom: 2%;
+   
+ }
+ 
+.navbar-div a{
+  color: #fff;
+  font-size: 1.8rem;
+}
+ }
+/* phone  426 section */
+ @media screen and (max-width:427px){
+.navbar-div li{
+   margin-bottom: 1rem;
+}
+ .carousel-indicators{
+  left: 37%;
+  bottom: 8%;
+  
+}
+.navbar-div hr{
+  display: none;
+}
+ 
+.title-div h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.title-div p{
+  font-size: .8rem;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+ 
+}
+ }
